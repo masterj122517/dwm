@@ -54,7 +54,7 @@ static const char scratchpadname[] = "scratchpad";
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 
 /*自定义volumetoggle */
-static const char *volumetoggle[] = { "/home/masterj/scripts/volume_toggle.sh", NULL};
+static const char *volumetoggle[] = { "~/scripts/volume_toggle.sh", NULL};
 
 //自定义dmenu
 static const char col_gray1[]       = "#222222";
