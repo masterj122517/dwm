@@ -21,7 +21,7 @@ static const int   nmaster               = 1;         /* 主工作区 窗口数�
 static const unsigned int snap           = 10;        /* 边缘依附宽度 */
 static const unsigned int baralpha       = 0xc0;      /* 状态栏透明度 */
 static const unsigned int borderalpha    = 0xdd;      /* 边框透明度 */
-static const char *fonts[]               = { "JetBrainsMono Nerd Font:style=medium:size=14", "monospace:size=14" };
+static const char *fonts[]               = { "Hack Nerd Font Mono:size=14","Iosevka Nerd Font Mono:size=14", "monospace:size=14" };
 static const char *colors[][3]           = {          /* 颜色设置 ColFg, ColBg, ColBorder */ 
     [SchemeNorm] = { "#bbbbbb", "#333333", "#444444" },
     [SchemeSel] = { "#ffffff", "#37474F", "#42A5F5" },
@@ -71,7 +71,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 /* 自定义特定实例的显示状态 */
 //            ﮸  ﭮ 切
 // 对应的tag序号以及快捷键:   0:1  1:2  2:3  3:4  4:5  5:9  6:c  7:m  8:0  9:w 10:l
-static const char *tags[] = { "", "", "", "", "","","","","", "", "", "ﬄ", "﬐", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "", "", "", "", "" };
 static const Rule rules[] = {
     /* class                 instance              title             tags mask     isfloating  isglobal    isnoborder monitor */
     {"obs",                  NULL,                 NULL,             1 << 8,       0,          0,          0,        -1 },
@@ -92,12 +92,12 @@ static const Rule rules[] = {
     {"global",               NULL,                 NULL,             TAGMASK,      1,          1,          0,        -1 }, // 特殊class client全局于所有tag
 };
 static const char *overviewtag = "OVERVIEW";
-static const Layout overviewlayout = { "舘",  overview };
+static const Layout overviewlayout = { "󱀅",  overview };
 
 /* 自定义布局 */
 static const Layout layouts[] = {
-    { "﬿",  tile },         /* 主次栈 */
-    { "﩯",  magicgrid },    /* 网格 */
+    { "󰋜",  tile },         /* 主次栈 */
+    { "󰕰",  magicgrid },    /* 网格 */
 };
 
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
