@@ -72,7 +72,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 /* 自定义特定实例的显示状态 */
 //            ﮸  ﭮ 切
 // 对应的tag序号以及快捷键:   0:1  1:2  2:3  3:4  4:5  5:9  6:c  7:m  8:0  9:w 10:l
-static const char *tags[] = { "", "", "", "", "", "", "", "", "", "", "", "", "","󱜚" };
+static const char *tags[] = { "", "", "", "󰠿", "", "", "", "", "", "", "", "", "","󱜚" };
 static const Rule rules[] = {
     /* class                 instance              title             tags mask     isfloating  isglobal    isnoborder monitor */
     {"obs",                  NULL,                 NULL,             1 << 8,       0,          0,          0,        -1 },
