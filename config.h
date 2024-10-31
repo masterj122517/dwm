@@ -174,8 +174,7 @@ static Key keys[] = {
     { MODKEY,              XK_Return, spawn, SHCMD("st") },                                                     /* super enter      | 打开st终端             */
     { MODKEY,              XK_minus,  spawn, SHCMD("st -c global") },                                           /* super +          | 打开全局st终端         */
     { MODKEY,              XK_space,  spawn, SHCMD("st -c float") },                                            /* super space      | 打开浮动st终端         */
-    { MODKEY|ShiftMask,    XK_d,      spawn, SHCMD("~/scripts/call_rofi.sh drun") },// rofi script 
-    { MODKEY,              XK_p,      spawn, SHCMD("~/scripts/call_rofi.sh run") }, // rofi script
+    { MODKEY|ShiftMask,    XK_d,      spawn, SHCMD("~/.config/rofi/scripts/launcher_t7") },// rofi script 
     { MODKEY|ShiftMask,    XK_s,      spawn, SHCMD("boomer")},                                                  /* super s      |缩放*/
     { MODKEY,              XK_a,      spawn, SHCMD("flameshot gui -c -p ~/Pictures/screenshots") },             /* super F12    | 截图                   */
     { MODKEY|ShiftMask,    XK_q,      spawn, SHCMD("kill -9 $(xprop | grep _NET_WM_PID | awk '{print $3}')") }, /* super shift q    | 选中某个窗口并强制kill */
