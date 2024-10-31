@@ -72,7 +72,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 /* 自定义特定实例的显示状态 */
 //            ﮸  ﭮ 切
 // 对应的tag序号以及快捷键:   0:1  1:2  2:3  3:4  4:5  5:9  6:c  7:m  8:0  9:w 10:l
-static const char *tags[] = { "", "", "", "󰠿", "", "", "", "", "", "", "", "", "","󱜚" };
+static const char *tags[] = { "", "", "", "󰠿", "", "", "", "", "", "", "", "", "","󱜚" };
 static const Rule rules[] = {
     /* class                 instance              title             tags mask     isfloating  isglobal    isnoborder monitor */
     {"obs",                  NULL,                 NULL,             1 << 8,       0,          0,          0,        -1 },
@@ -174,7 +174,8 @@ static Key keys[] = {
     { MODKEY,              XK_Return, spawn, SHCMD("st") },                                                     /* super enter      | 打开st终端             */
     { MODKEY,              XK_minus,  spawn, SHCMD("st -c global") },                                           /* super +          | 打开全局st终端         */
     { MODKEY,              XK_space,  spawn, SHCMD("st -c float") },                                            /* super space      | 打开浮动st终端         */
-    { MODKEY|ShiftMask,    XK_d,      spawn, SHCMD("~/scripts/call_rofi.sh drun") },                                            /* super space      | 打开浮动st终端         */
+    { MODKEY|ShiftMask,    XK_d,      spawn, SHCMD("~/scripts/call_rofi.sh drun") },// rofi script 
+    { MODKEY,              XK_p,      spawn, SHCMD("~/scripts/call_rofi.sh run") }, // rofi script
     { MODKEY|ShiftMask,    XK_s,      spawn, SHCMD("boomer")},                                                  /* super s      |缩放*/
     { MODKEY,              XK_a,      spawn, SHCMD("flameshot gui -c -p ~/Pictures/screenshots") },             /* super F12    | 截图                   */
     { MODKEY|ShiftMask,    XK_q,      spawn, SHCMD("kill -9 $(xprop | grep _NET_WM_PID | awk '{print $3}')") }, /* super shift q    | 选中某个窗口并强制kill */
@@ -196,8 +197,8 @@ static Key keys[] = {
     TAGKEYS(XK_n, 9,  "google-chrome-stable")
     TAGKEYS(XK_m, 10,  "netease-cloud-music")
     TAGKEYS(XK_z, 11,  "linuxqq")
-    TAGKEYS(XK_x, 12,  "/opt/apps/com.qq.weixin.deepin/files/run.sh")
-    TAGKEYS(XK_c, 13, "emacs")
+    TAGKEYS(XK_x, 12,  "wechat-universal")
+    TAGKEYS(XK_c, 13, "")
 };
 static Button buttons[] = {
     /* click               event mask       button            function       argument  */
